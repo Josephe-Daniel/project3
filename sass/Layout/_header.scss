@@ -1,0 +1,17 @@
+.header{
+    height : rem-calc(60);
+    width: 100%;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.591);
+    @include flex-center;
+    @media screen and (min-width: 768px){
+        height: rem-calc(80);
+    }
+        img{
+            width: rem-calc(170);
+            height: auto;
+            @media screen and (min-width: 768px){
+                width: auto;
+                width: rem-calc(250);
+            }
+        }
+}

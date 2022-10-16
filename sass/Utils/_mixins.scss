@@ -1,0 +1,64 @@
+// Center
+
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin button-style{
+    padding: rem-calc(20);
+    border: none;
+    border-radius: rem-calc(30);
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: white;
+    font-weight: 400;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    background: $gradient;
+    transition: all 0.4s ease-in-out;
+}
+
+@mixin button-hover{
+    box-shadow: 5px 5px 5px black;
+    background: $light-gradient;
+}
+
+@mixin base-shadow{
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.421);
+}
+
+// logo process
+
+@mixin logo-process{
+    font-family: 'FontAwesome';
+    margin-left: rem-calc(30);
+    margin-right: rem-calc(10);
+    width: rem-calc(30);
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    color: #00000063;
+    transition: all 0.4s ease-in-out;
+    @media screen and (min-width: 768px) {
+        margin-left: 0; 
+        margin-right: rem-calc(30);
+    }
+}
+
+// Heart
+
+@mixin heart{
+    content: '\f004';
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    transition: all 0.8s ease-in-out;
+}
+
+@mixin heart-solid{
+    background: $gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    opacity: 0;
+    cursor: pointer;
+}
+

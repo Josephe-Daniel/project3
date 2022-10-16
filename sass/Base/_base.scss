@@ -1,0 +1,48 @@
+html{
+    font-size: $base-font-size;
+    font-family: $text-font;
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-family: $title-font;
+    font-weight: 500;
+    font-size: clamp(2rem, 2vw, 3rem);
+}
+
+h2{
+    font-size: clamp(1.8rem, 2vw, 2.5rem);
+    font-weight: 500;
+}
+
+h3{
+    font-size: clamp(1.4rem, 2vw, 1.8rem);
+    font-weight: 500;
+}
+
+h4{
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    font-weight: 500;
+}
+
+p{
+    font-weight: 500;
+    font-size: clamp(1.2rem, 2vw, 1.6rem);
+}
+
+a{
+    font-size: clamp(1.3rem, 2vw, 0.8rem);
+    text-decoration: none;
+    color: inherit;
+}
+
+li{
+    list-style-type: none;
+}
+
+img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}

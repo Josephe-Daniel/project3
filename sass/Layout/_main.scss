@@ -1,0 +1,174 @@
+
+.main{
+    &__location{
+        height: rem-calc(70);
+        background-color: #EAEAEA;
+        @include flex-center;
+            p::before{
+                content: '\f3c5';
+                font-family: 'FontAwesome';
+                margin-right: rem-calc(15);
+        }
+    }
+    &__description{
+        flex-direction: column;
+        padding: rem-calc(50) rem-calc(20) rem-calc(60);
+        text-align: center;
+        background-color: #F6F6F6;
+        @include flex-center;
+            &__text{
+                margin: rem-calc(15) 0 rem-calc(35);
+                font-weight: 300;
+            }
+            &__btn{
+                @include base-shadow;
+                @include button-style;
+                @media screen and (min-width:768px) {
+                    padding: rem-calc(20);
+                }
+                &:hover{
+                    @include button-hover;       
+                }
+            }
+    }
+    &__process{
+        @include flex-center;
+        flex-direction: column;
+        padding: rem-calc(40) rem-calc(20);
+            h2{
+                align-self: flex-start;
+                margin-bottom: rem-calc(25);
+                @media screen and (min-width: 768px) {
+                    align-self: center;
+                }
+            }
+            &__step{
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                flex-direction: row-reverse;
+                position: relative;
+                width: 100%;
+                max-width: rem-calc(691);
+                margin-bottom: rem-calc(25);
+                padding: rem-calc(15) rem-calc(15) rem-calc(15) 0;
+                border-radius: rem-calc(20);
+                cursor: pointer;
+                background-color: #F6F6F6;
+                transition: all 0.4s ease-in-out;
+                @include base-shadow;
+                @media screen and (min-width: 768px) {
+                    justify-content: center; 
+                }
+                div{
+                    @include flex-center;
+                    position: absolute;
+                    left: rem-calc(-12);
+                    width: rem-calc(25);
+                    height: rem-calc(25);
+                    border-radius: 50%;
+                    font-size: clamp(1.1rem, 2vw, 1.5rem);
+                    color: white;
+                    background-color: $color-primary;
+                    @media screen and (min-width: 768px) {
+                        width: rem-calc(35);
+                        height: rem-calc(35);
+                    }
+                }    
+                p{
+                    font-size: clamp(1.1rem, 2vw, 1.6rem);
+                }
+                &:nth-child(2)::after{
+                    content: '\f3cf';
+                    @include logo-process;
+                }
+                &:nth-child(3)::after{
+                    content: '\f03a';
+                    @include logo-process;
+                }
+                &:nth-child(4)::after{
+                    content: '\f54e';
+                    @include logo-process;
+                }
+                &:focus div{
+                    display: none;
+                }
+                &:hover, &:focus{
+                    background-color: lighten($color-primary, 35%);
+                        &:hover::after,
+                        &:focus::after{
+                            color: $color-primary;
+                        }
+                }
+            }
+    }
+}
+
+.main__restaurant{
+    padding: rem-calc(50) rem-calc(20) rem-calc(40);
+    background-color: #F6F6F6;
+    h2{
+        margin-bottom: rem-calc(10);
+        @media screen and (min-width: 768px) {
+            text-align: center;
+        }
+    }
+    .card{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0 rem-calc(50);
+        margin: 0 auto;
+        width: 100%;
+        max-width: rem-calc(2000);
+        a{
+            width: 100%;
+            max-width: rem-calc(650);
+            height: rem-calc(300);
+            border-radius: rem-calc(20);
+            overflow: hidden;
+            margin: rem-calc(20) 0;
+            color: black;
+            @include base-shadow;
+                figure{
+                    height: 70%;
+                    @include flex-center;
+                }
+                p{
+                    font-weight: 300;
+                }
+            }
+            &__info{
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 30%;
+                padding: rem-calc(10) rem-calc(15);
+                h3{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+                &__heart{
+                    @include flex-center;
+                    width: rem-calc(30);
+                    height: rem-calc(30);
+                    &::before{
+                        @include heart;
+                    }
+                    &::after{
+                        @include heart;
+                        @include heart-solid;
+                        }
+                    &:hover::before{
+                        color:transparent;
+                    }
+                    &:hover::after{
+                        font-weight: 900;
+                        opacity: 1;
+                    }
+                }
+            }
+    }
+}

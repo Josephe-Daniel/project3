@@ -1,0 +1,17 @@
+.new{
+    position: relative;
+        &::before{
+            content: 'Nouveau';
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: rem-calc(20);
+            right: rem-calc(20);
+            border-radius: rem-calc(5);
+            padding: rem-calc(10) rem-calc(15);
+            font-weight: 500;
+            color: darken($color-tertiary, 40%);
+            background-color: $color-tertiary;
+        }
+}

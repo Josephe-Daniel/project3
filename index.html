@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+    <html lang="fr">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="description" content="Composez votre propre menu et réduisez votre temps d'attente au restaurant !">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Ohmyfood</title>
+            <link rel="stylesheet" href="css/style.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+            <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+            <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+            <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+            <link rel="manifest" href="assets/favicon/site.webmanifest">
+            <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+            <meta name="msapplication-TileColor" content="#da532c">
+            <meta name="theme-color" content="#ffffff">
+        </head>
+        <body>
+
+            <!-- Loader -->
+            <div class="loader">
+                <div class="loader__ring"></div>
+                <p class="loader__txt">Chargement...</p>
+            </div>
+
+            <!-- Header -->
+
+            <header class="header">
+                <h1>ohmyfood</h1>
+            </header>
+
+            <!-- Main -->
+
+            <main class="main">
+                <div class="main__location">
+                    <p>Paris, Belleville</p>
+                </div>
+
+                <section class="main__description">
+                    <h2 class="main__description__title">Réservez le menu qui vous convient</h2>
+                    <p class="main__description__text">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+                    <a class="main__description__btn" href="#restaurants">Explorer nos restaurants</a>                
+                </section>
+
+                <section class="main__process">
+                    <h2>Fonctionnement</h2>
+                    <div tabindex="0" class="main__process__step">
+                        <p>Choisissez un restaurant</p>
+                        <div>1</div>
+                    </div>
+                    <div tabindex="0" class="main__process__step">
+                        <p>Composez votre menu</p>
+                        <div>2</div>
+                    </div>
+                    <div tabindex="0" class="main__process__step">
+                        <p>Dégustez au restaurant</p>
+                        <div>3</div>
+                    </div>
+                </section>
+
+                <section class="main__restaurant">
+                    <h2 id="restaurants">Restaurants</h2>
+                    <div class="card">
+                        <a class="new" href="pages/laPaletteDuGout.html">
+                            <figure>
+                                <img src="assets/restaurants/medium/jay-wennington-N_Y88TWmGwA-unsplash__medium.jpg" alt="Plat sur plaque en céramique blanche">
+                            </figure>
+                            <div class="card__info">
+                                <h3>La palette du goût<span class="card__info__heart"></span></h3>
+                                <p>Ménilmontant</p>
+                            </div>
+                        </a>
+                        <a class="new" href="pages/laNoteEnchantée.html">
+                            <figure>
+                                <img src="assets/restaurants/medium/stil-u2Lp8tXIcjw-unsplash__medium.jpg" alt="Boulettes de viande sur une plaque en céramique blanche">
+                            </figure>
+                            <div class="card__info">
+                                <h3>La note enchantée<span class="card__info__heart"></span></h3>
+                                <p>Charonne</p>
+                            </div>
+                        </a>
+                        <a href="pages/aLaFrancaise.html">
+                            <figure>
+                                <img src="assets/restaurants/medium/toa-heftiba-DQKerTsQwi0-unsplash__medium.jpg" alt="viande crue avec crème et légumes feuillus">
+                            </figure>
+                            <div class="card__info">
+                                <h3>À la française<span class="card__info__heart"></span></h3>
+                                <p>Cité Rouge</p>
+                            </div>
+                        </a>
+                        <a href="pages/leDeliceDesSens.html">
+                            <figure>
+                                <img src="assets/restaurants/medium/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash__medium.jpg" alt="Dos de cabillaud sur lit de légumes">
+                            </figure>
+                            <div class="card__info">
+                                <h3>Le délice des sens<span class="card__info__heart"></span></h3>
+                                <p>Folie-Méricourt</p>
+                                
+                            </div>
+                        </a>
+                    </div>
+                </section>
+            </main>
+
+            <!-- Footer -->
+
+            <footer class="footer">
+                <h2>ohmyfood</h2>
+                <ul class="footer__nav">
+                    <li>
+                        <a href="#">Proposer un restaurant</a>
+                    </li>
+                    <li>
+                        <a href="#">Devenir partenaire</a>
+                    </li>
+                    <li>
+                        <a href="#">Mentions légales</a>
+                    </li>
+                    <li>
+                        <a href="mailto:adresse@serveur.com">Contact</a>
+                    </li>
+                </ul>
+            </footer>
+            
+        </body>
+    </html>

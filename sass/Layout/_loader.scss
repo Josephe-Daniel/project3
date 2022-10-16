@@ -1,0 +1,33 @@
+.loader{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    pointer-events:none;
+    background-color: #000000;
+    @include flex-center;
+    animation: visibility 1.5s ease forwards;
+        &__txt{
+            font-size: 30px;
+            letter-spacing: 1px;
+            color: #ffffff;
+            animation: text 0.6s linear infinite;
+        }
+        &__ring{  
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    border-radius: 50%;
+                    border: 10px solid transparent;
+                    animation: rotate 1s linear infinite;
+                }
+        }
+}

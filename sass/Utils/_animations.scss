@@ -1,0 +1,46 @@
+// loader
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+        border-top-color: $color-primary;
+        border-bottom-color: $color-primary;
+    }
+    50%{
+        transform: rotate(180deg);
+        border-top-color: $color-secondary;
+        border-bottom-color: $color-secondary;
+    }
+    100%{
+        transform: rotate(360deg);
+        border-top-color: $color-tertiary;
+        border-bottom-color: $color-tertiary;
+    }
+}
+
+@keyframes visibility {
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes text {
+    to{
+        opacity: 0;
+    }
+}
+
+
+@keyframes appear {
+    from{
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
