@@ -1,146 +1,137 @@
 <!DOCTYPE html>
-<html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>À la française</title>
-        <link rel="stylesheet" href="../css/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-        <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="../assets/favicon/favicon-32x32.png"
-        >
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href="../assets/favicon/favicon-16x16.png"
-        >
-        <link rel="manifest" href="../assets/favicon/site.webmanifest">
-        <link rel="mask-icon" href="../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="theme-color" content="#ffffff">
-    </head>
-    <body>
-        <header class="header">
-            <a class="header__return" href="../index.html">
-                <i class="fa-solid fa-arrow-left"></i>
-            </a>
-            <h1>ohmyfood</h1>
-        </header>
-        <main class="main">
-            <img class="main__banner" src="../assets/restaurants/large/toa-heftiba-DQKerTsQwi0-unsplash__large.jpg" alt="viande crue avec crème et légumes feuillus">
-            <section class="main__menu">
-                <div id="title">
-                    <h2 class="main__menu__title">À la française</h2>
-                    <span class="heart" id="heart_id"></span>
-                </div>
-                <div class="main__menu__starter">
-                    <h3>Entrées</h3>
-                    <div tabindex="0" class="meal">
-                        <div class="meal__description">
-                            <h4>Tartare de poulpe acidulé</h4>
-                            <p>Aux zestes d'orange</p>
+    <html lang="fr">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>À la française</title>
+            <link rel="stylesheet" href="../css/style.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+            <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+            <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+            <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+            <link rel="manifest" href="../assets/favicon/site.webmanifest">
+            <link rel="mask-icon" href="../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+            <meta name="msapplication-TileColor" content="#da532c">
+            <meta name="theme-color" content="#ffffff">
+        </head>
+        <body>
+            
+            <header class="header">
+                <a class="header__return" href="../index.html">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+                <h1>ohmyfood</h1>
+            </header>
+
+            <main class="main">
+                <img class="main__banner" src="../assets/restaurants/large/toa-heftiba-DQKerTsQwi0-unsplash__large.jpg" alt="viande crue avec crème et légumes feuillus">
+                <section class="main__menu">
+                    <h2 class="main__menu__title">À la française<span class="heart"></span></h2>
+                    <div class="main__menu__starter">
+                        <h3>Entrées</h3>
+                        <div tabindex="0" class="meal">
+                            <div class="meal__description">
+                                <h4>Tartare de poulpe acidulé</h4>
+                                <p>Aux zestes d'orange</p>
+                            </div>
+                            <p class="meal__price">25€</p>
+                            <div class="meal__check"></div>
                         </div>
-                        <p class="meal__price">25€</p>
-                        <div class="meal__check"></div>
-                    </div>
-                    <div tabindex="0" class="meal">
-                        <div class="meal__description">
-                            <h4>Velouté de légumes d'antan</h4>
-                            <p>Carotte, panais, topinambour</p>
+                        <div tabindex="0" class="meal">
+                            <div class="meal__description">
+                                <h4>Velouté de légumes d'antan</h4>
+                                <p>Carotte, panais, topinambour</p>
+                            </div>
+                            <p class="meal__price">35€</p>
+                            <div class="meal__check"></div>
                         </div>
-                        <p class="meal__price">35€</p>
-                        <div class="meal__check"></div>
-                    </div>
-                    <div tabindex="0" class="meal">
-                        <div class="meal__description">
-                            <h4>Soupe à l'oignon</h4>
-                            <p>Revisitée</p>
+                        <div tabindex="0" class="meal">
+                            <div class="meal__description">
+                                <h4>Soupe à l'oignon</h4>
+                                <p>Revisitée</p>
+                            </div>
+                            <p class="meal__price">20€</p>
+                            <div class="meal__check"></div>
                         </div>
-                        <p class="meal__price">20€</p>
-                        <div class="meal__check"></div>
                     </div>
-                </div>
-                <div class="main__menu__dish">
-                    <h3>Plats</h3>
-                    <div tabindex="0" class="meal">
-                        <div class="meal__description">
-                            <h4>Coquilles Saint-Jacques</h4>
-                            <p>Accompagnées d'une purée de panais</p>
+                    <div class="main__menu__dish">
+                        <h3>Plats</h3>
+                        <div tabindex="0" class="meal">
+                            <div class="meal__description">
+                                <h4>Coquilles Saint-Jacques</h4>
+                                <p>Accompagnées d'une purée de panais</p>
+                            </div>
+                            <p class="meal__price">40€</p>
+                            <div class="meal__check"></div>
                         </div>
-                        <p class="meal__price">40€</p>
-                        <div class="meal__check"></div>
-                    </div>
-                    <div tabindex="0" class="meal">
-                        <div class="meal__description">
-                            <h4>Magret de canard</h4>
-                            <p>Et parmentier de pommes de terre</p>
+                        <div tabindex="0" class="meal">
+                            <div class="meal__description">
+                                <h4>Magret de canard</h4>
+                                <p>Et parmentier de pommes de terre</p>
+                            </div>
+                            <p class="meal__price">35€</p>
+                            <div class="meal__check"></div>
                         </div>
-                        <p class="meal__price">35€</p>
-                        <div class="meal__check"></div>
-                    </div>
-                    <div tabindex="0" class="meal">
-                        <div class="meal__description">
-                            <h4>Pigeonneau d’Ille-et-Vilaine</h4>
-                            <p>Sur son lit de gnocchis aux légumes</p>
+                        <div tabindex="0" class="meal">
+                            <div class="meal__description">
+                                <h4>Pigeonneau d’Ille-et-Vilaine</h4>
+                                <p>Sur son lit de gnocchis aux légumes</p>
+                            </div>
+                            <p class="meal__price">44€</p>
+                            <div class="meal__check"></div>
                         </div>
-                        <p class="meal__price">44€</p>
-                        <div class="meal__check"></div>
                     </div>
-                </div>
-                <div class="main__menu__dessert">
-                    <h3>Desserts</h3>
-                    <div tabindex="0" class="meal">
-                        <div class="meal__description">
-                            <h4>Pétales de violettes glacés</h4>
-                            <p>Et purée de noisettes</p>
+                    <div class="main__menu__dessert">
+                        <h3>Desserts</h3>
+                        <div tabindex="0" class="meal">
+                            <div class="meal__description">
+                                <h4>Pétales de violettes glacés</h4>
+                                <p>Et purée de noisettes</p>
+                            </div>
+                            <p class="meal__price">18€</p>
+                            <div class="meal__check"></div>
                         </div>
-                        <p class="meal__price">18€</p>
-                        <div class="meal__check"></div>
-                    </div>
-                    <div tabindex="0" class="meal">
-                        <div class="meal__description">
-                            <h4>Fondant au chocolat</h4>
-                            <p>Revisité</p>
+                        <div tabindex="0" class="meal">
+                            <div class="meal__description">
+                                <h4>Fondant au chocolat</h4>
+                                <p>Revisité</p>
+                            </div>
+                            <p class="meal__price">22€</p>
+                            <div class="meal__check"></div>
                         </div>
-                        <p class="meal__price">22€</p>
-                        <div class="meal__check"></div>
-                    </div>
-                    <div tabindex="0" class="meal">
-                        <div class="meal__description">
-                            <h4>Millefeuille croustillant</h4>
-                            <p>Myrtilles et pâte d’amande</p>
+                        <div tabindex="0" class="meal">
+                            <div class="meal__description">
+                                <h4>Millefeuille croustillant</h4>
+                                <p>Myrtilles et pâte d’amande</p>
+                            </div>
+                            <p class="meal__price">23€</p>
+                            <div class="meal__check"></div>                         
                         </div>
-                        <p class="meal__price">23€</p>
-                        <div class="meal__check"></div>
                     </div>
-                </div>
-                <a class="main__menu__btn" href="#">Commander</a>
-            </section>
-        </main>
-        <footer class="footer">
-            <h2>ohmyfood</h2>
-            <ul class="footer__nav">
-                <li>
-                    <a href="#">Proposer un restaurant</a>
-                </li>
-                <li>
-                    <a href="#">Devenir partenaire</a>
-                </li>
-                <li>
-                    <a href="#">Mentions légales</a>
-                </li>
-                <li>
-                    <a href="mailto:adresse@serveur.com">Contact</a>
-                </li>
-            </ul>
-        </footer>
-    </body>
-</html>
+                    <a class="main__menu__btn" href="#">Commander</a>
+                </section>
+            </main>
+
+            <footer class="footer">
+                <h2>ohmyfood</h2>
+                <ul class="footer__nav">
+                    <li>
+                        <a href="#">Proposer un restaurant</a>
+                    </li>
+                    <li>
+                        <a href="#">Devenir partenaire</a>
+                    </li>
+                    <li>
+                        <a href="#">Mentions légales</a>
+                    </li>
+                    <li>
+                        <a href="mailto:adresse@serveur.com">Contact</a>
+                    </li>
+                </ul>
+            </footer>
+
+        </body>
+    </html>
